@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  pyspark:
+    image: quay.io/jupyter/pyspark-notebook:latest # image name and tag
+    container_name: pyspark # custom container name 
+    command: start-notebook.sh --NotebookApp.token='' # removes the need for access token. Only do this for development work in your local machine
+    ports:
+      - "8888:8888" # Jupyter UI
+      - "4040:4040" # Spark UI. Every new context is on an incremental port (4041, 4042, etc)
+    volumes:
+      - "./mnt/:/home/jovyan/" # map a local folder to the Jupyter workspace folder
