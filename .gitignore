@@ -1,2 +1,5 @@
 mnt
 test
+*.pptx
+tmp*
+hadoop_*
