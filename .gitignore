@@ -3,3 +3,4 @@ test
 *.pptx
 tmp*
 hadoop_*
+report
