@@ -4,3 +4,4 @@ test
 tmp*
 hadoop_*
 report
+*.csv
