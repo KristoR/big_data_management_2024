@@ -5,3 +5,5 @@ tmp*
 hadoop_*
 report
 *.csv
+.kafka_producer
+.env
